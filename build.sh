@@ -1,4 +1,10 @@
-rmdir build
+#!/bin/bash
+
+if [[ -d "build" ]]
+then
+	rmdir build
+fi
+
 mkdir build
 nasm -f elf32 kernel.asm -o build/kasm.o
 gcc -m32 -c kernel.c -o build/kc.o
