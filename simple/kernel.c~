@@ -65,7 +65,7 @@ void kernel_entry()
 */
 
 	for(i = 0; i < 10000000000; i++){
-		x = x + i;
+		x = x + i
   	}
 
   vga_buffer[10] = vga_entry('d', WHITE, BLACK);
